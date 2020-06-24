@@ -6,3 +6,7 @@
 <app-template-referance-variable></app-template-referance-variable>
 <app-two-way-binding></app-two-way-binding>
 <app-ng-if-switch-for></app-ng-if-switch-for>
+<app-data-share-between-com (childEvent)="mas=$event" [parentName]="name"></app-data-share-between-com> 
+<div>
+    <h3>{{mas}}</h3>
+</div>

@@ -11,6 +11,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TemplateReferanceVariableComponent } from './template-referance-variable/template-referance-variable.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { NgIfSwitchForComponent } from './ng-if-switch-for/ng-if-switch-for.component';
+import { DataShareBetweenComComponent } from './data-share-between-com/data-share-between-com.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NgIfSwitchForComponent } from './ng-if-switch-for/ng-if-switch-for.comp
     EventBindingComponent,
     TemplateReferanceVariableComponent,
     TwoWayBindingComponent,
-    NgIfSwitchForComponent
+    NgIfSwitchForComponent,
+    DataShareBetweenComComponent
   ],
   imports: [
     BrowserModule,
