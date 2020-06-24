@@ -1,0 +1,7 @@
+[
+    {"name":"ann" , "age":"30" , "gender":"female"},
+    {"name":"maria" , "age":"28" , "gender":"female"},
+    {"name":"jhon" , "age":"39" , "gender":"male"},
+    {"name":"mike" , "age":"49" , "gender":"male"},
+    {"name":"julia" , "age":"37" , "gender":"female"}
+]

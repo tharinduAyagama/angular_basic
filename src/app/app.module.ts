@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import { StudentListComponent } from './student-list/student-list.component';
 import { StudentDetailListComponent } from './student-detail-list/student-detail-list.component';
 
 import { StudentService }  from './student.service';
+import { MangerDetailsComponent } from './manger-details/manger-details.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +33,14 @@ import { StudentService }  from './student.service';
     DataShareBetweenComComponent,
     PipesComponent,
     StudentListComponent,
-    StudentDetailListComponent
+    StudentDetailListComponent,
+    MangerDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [StudentService],
   bootstrap: [AppComponent]
