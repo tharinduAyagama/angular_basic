@@ -13,6 +13,10 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { NgIfSwitchForComponent } from './ng-if-switch-for/ng-if-switch-for.component';
 import { DataShareBetweenComComponent } from './data-share-between-com/data-share-between-com.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { StudentListComponent } from './student-list/student-list.component';
+import { StudentDetailListComponent } from './student-detail-list/student-detail-list.component';
+
+import { StudentService }  from './student.service';
 
 @NgModule({
   declarations: [
@@ -25,14 +29,16 @@ import { PipesComponent } from './pipes/pipes.component';
     TwoWayBindingComponent,
     NgIfSwitchForComponent,
     DataShareBetweenComComponent,
-    PipesComponent
+    PipesComponent,
+    StudentListComponent,
+    StudentDetailListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [StudentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
