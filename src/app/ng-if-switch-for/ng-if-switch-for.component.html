@@ -1,0 +1,22 @@
+<!-- ngIf -->
+<div *ngIf="truthy; then trueState; else falseStste;"></div>
+
+<ng-template #trueState>
+    <h3>this is true</h3>
+</ng-template>
+<ng-template #falseStste>
+    <h3>this is false</h3>
+</ng-template>
+
+<!-- ngSwitch -->
+<div [ngSwitch]="col">
+    <h3 *ngSwitchCase="'red'" class="redClass">colour</h3>
+    <h3 *ngSwitchCase="'green'" class="greenClass">colour</h3>
+    <h3 *ngSwitchCase="'orange'" class="orangeClass">colour</h3>
+    <h3 *ngSwitchDefault class="defaultClass">colour</h3>
+</div>
+
+<!-- ngfor -->
+<div *ngFor="let student of students; index as i">
+    <h3>{{i}} {{student}}</h3>
+</div>
