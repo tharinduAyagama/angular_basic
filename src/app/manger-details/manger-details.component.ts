@@ -9,6 +9,7 @@ import { ManagerService } from '../manager.service';
 export class MangerDetailsComponent implements OnInit {
 
   public managers = [];
+  public err;
   constructor(private _managerSrevice: ManagerService) {
     this._managerSrevice.getManager()
     .subscribe(data => this.managers=data);
@@ -16,5 +17,6 @@ export class MangerDetailsComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  // ,
+  // error => this.err=error
 }
