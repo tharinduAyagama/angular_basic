@@ -22,6 +22,7 @@ import { MangerDetailsComponent } from './manger-details/manger-details.componen
 import { TeachersComponent } from './teachers/teachers.component';
 import { StudentsComponent } from './students/students.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TeacherDetailComponent } from './teacher-detail/teacher-detail.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MangerDetailsComponent,
     TeachersComponent,
     StudentsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    TeacherDetailComponent
   ],
   imports: [
     BrowserModule,

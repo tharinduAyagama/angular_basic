@@ -1,1 +1,5 @@
-<p>teachers works!</p>
+<div>
+    <li (click)="onClick(teacher)" *ngFor="let teacher of teachers">
+        {{teacher.id}} {{teacher.name}}
+    </li>
+</div>
