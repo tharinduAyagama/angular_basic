@@ -19,6 +19,9 @@ import { StudentDetailListComponent } from './student-detail-list/student-detail
 
 import { StudentService }  from './student.service';
 import { MangerDetailsComponent } from './manger-details/manger-details.component';
+import { TeachersComponent } from './teachers/teachers.component';
+import { StudentsComponent } from './students/students.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { MangerDetailsComponent } from './manger-details/manger-details.componen
     PipesComponent,
     StudentListComponent,
     StudentDetailListComponent,
-    MangerDetailsComponent
+    MangerDetailsComponent,
+    TeachersComponent,
+    StudentsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
